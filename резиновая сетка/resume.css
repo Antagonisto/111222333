@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: auto;
+  gap: 7px 15px;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+  grid-template-areas:
+    "Шапка Шапка Шапка"
+    "один два три"
+    "четыре шесть пять"
+    "четыре семь пять"
+    "четыре восемь пять"
+    "девять девять девять"
+    "десять одинадцать двенадцать"
+    "Подвал Подвал Подвал";
+}
+
+.Шапка {
+  grid-area: Шапка;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.один {
+  grid-area: один;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.два {
+  grid-area: два;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.три {
+  grid-area: три;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.четыре {
+  grid-area: четыре;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.пять {
+  grid-area: пять;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.шесть {
+  grid-area: шесть;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.семь {
+  grid-area: семь;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.восемь {
+  grid-area: восемь;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.девять {
+  grid-area: девять;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.десять {
+  grid-area: десять;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.одинадцать {
+  grid-area: одинадцать;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.двенадцать {
+  grid-area: двенадцать;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}
+
+.Подвал {
+  grid-area: Подвал;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 100%
+}

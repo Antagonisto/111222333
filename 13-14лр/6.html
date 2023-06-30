@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Информация о глубине цвета</title>
+  <script>
+    function showColorDepth() {
+      var colorDepth = screen.colorDepth;
+      var message = "Глубина цвета: " + colorDepth + " бит/пиксель";
+
+      var newWindow = window.open("", "", "width=800,height=600,scrollbars=no");
+      newWindow.document.write("<html><head><title>Информация о глубине цвета</title></head><body><h1>" + message + "</h1></body></html>");
+      newWindow.document.close();
+    }
+  </script>
+</head>
+<body>
+  <h1>Информация о глубине цвета</h1>
+  <button onclick="showColorDepth()">Показать информацию</button>
+</body>
+</html>

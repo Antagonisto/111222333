@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой документ</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                var documentWidth = document.documentElement.clientWidth;
+                var newWindow = window.open('', '_blank');
+                newWindow.document.write('<h1>Ширина документа: ' + documentWidth + ' пикселей</h1>');
+                newWindow.document.close();
+            }, 5000);
+            var node3Copy = node3.cloneNode(true);
+            node1.parentNode.insertBefore(node3Copy, node1.nextSibling);
+        });
+    </script>
+    <style>
+        /* Стили для гиперссылки */
+        a {
+            text-decoration: none; /* Без подчеркивания */
+            font-size: 16px; /* Исходный размер шрифта */
+            transition: font-size 0.3s; /* Плавный переход размера шрифта */
+        }
+
+        /* Стили для гиперссылки при наведении */
+        a:hover {
+            font-size: 32px; /* Увеличение размера шрифта в 2 раза */
+            color: green; /* Зеленый цвет */
+        }
+    </style>
+</head>
+<body>
+    <h1>Коваленок Максим Олегович</h1>
+
+    <h2>Ссылка на мой любимый сайт:</h2>
+    <a href="https://vk.com/al_im.php?peers=c89_251849354_538248799&sel=377746728">Мой любимый сайт</a>
+
+    <h2 id="node1">Узел №1</h2>
+    <h2 id="node2">Узел №2</h2>
+    <h2 id="node3">Узел №3</h2>
+
+    <img src="123.jpg" alt="Мое изображение">
+
+    <script>
+        function getWidth() {
+            var documentWidth = document.documentElement.clientWidth;
+            var newWindow = window.open('', '_blank');
+            newWindow.document.write('<h1>Ширина документа: ' + documentWidth + ' пикселей</h1>');
+            newWindow.document.close();
+        }
+
+        setTimeout(getWidth, 5000);
+        var node3Copy = node3.cloneNode(true);
+        node1.parentNode.insertBefore(node3Copy, node1.nextSibling);
+    </script>
+</body>
+</html>

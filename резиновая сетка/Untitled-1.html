@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Сетка</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link href="resume.css" rel="stylesheet" type="text/css">
+	<style> 
+		@import url(resume.css);
+		body {
+			background-color: rgb(255, 122, 144);
+		}
+	</style> 
+
+<head>
+	<title>Container</title>
+	<style>
+  
+	  body{
+		/*настраиваем шрифт*/
+		font-family: Arial, Helvetica, sans-serif;
+	  }
+  
+	  /*общие настройки сетки*/
+	  .container {
+
+		/*подключаем сетку*/
+		display: container;
+
+	  } 
+  
+	  /*внешний вид ячеек*/
+	  .container > * {
+		/*фоновый цвет*/
+		background-color: #ffbf94;
+		/*скругление углов*/
+		border-radius: 5px;
+		/*расстояние от одной границы ячейки до другой*/
+		margin: 1px;
+	  }
+	  
+  
+	</style>
+  </head>
+  
+  <body>
+	<!-- создаём контейнер, который будет отвечать за нашу сетку -->
+	<div class="container">
+	  <!-- и создаём 16 вложенных элементов -->
+	  <div class="Шапка">Шапка</div>	
+	  <div class="один">один</div>
+	  <div class="два">два</div>
+	  <div class="три">три</div>
+	  <div class="четыре">четрые</div>
+	  <div class="пять">пять</div>
+	  <div class="шесть">шесть</div>
+	  <div class="семь">семь</div>
+	  <div class="восемь">восемь</div>
+	  <div class="девять">девять</div>
+	  <div class="десять">десять</div>
+	  <div class="одинадцать">одинадцать</div>
+	  <div class="двенадцать">двенадцать</div>
+	  
+	  <div class="Подвал">Подвал</div>
+
+	</div>
+  </body>
+  </html>

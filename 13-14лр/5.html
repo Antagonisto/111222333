@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Работа со строками</title>
+  <script>
+    function processStrings() {
+      var S1 = "Коваленок";
+      var S2 = "Гродно";
+
+      // Определить длину строки S2
+      var lengthS2 = S2.length;
+      document.getElementById("lengthS2").innerHTML = "Длина строки S2: " + lengthS2;
+
+      // Выполнить сцепление строк S1 и S2
+      var concatenation = S1 + S2;
+      document.getElementById("concatenation").innerHTML = "Результат сцепления строк: " + concatenation;
+
+      // Преобразовать строку S2 в нижний регистр
+      var lowercaseS2 = S2.toLowerCase();
+      document.getElementById("lowercaseS2").innerHTML = "Строка S2 в нижнем регистре: " + lowercaseS2;
+    }
+  </script>
+</head>
+<body>
+  <h1>Работа со строками</h1>
+  <button onclick="processStrings()">Обработать строки</button>
+  <div id="lengthS2"></div>
+  <div id="concatenation"></div>
+  <div id="lowercaseS2"></div>
+</body>
+</html>

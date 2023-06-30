@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Информация о типе процессора клиента</title>
+    <script>
+        function showProcessorInfo() {
+            var processorType = navigator.hardwareConcurrency;
+            var newWindow = window.open("", "_blank");
+
+            newWindow.document.write("<p>тип процессора: " + processorType + "</p>");
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            setInterval(showProcessorInfo, 4000);
+        });
+    </script>
+</head>
+<body>
+    <h1>Информация о типе процессора клиента</h1>
+</body>
+</html>
